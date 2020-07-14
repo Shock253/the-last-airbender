@@ -12,7 +12,7 @@
   <section class="search_results">
     <%= @members.each do |member| %>
       <p><%= member.name %></p>
-      <p><%= image_tag(member.photo) %></p>
+      <p><%= image_tag(member.photo) if member.photo %></p>
       <p><%= member.affiliation %></p>
       <%= member.enemies.each do |enemy| %>
 
