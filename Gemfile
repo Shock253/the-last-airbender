@@ -19,12 +19,16 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'database_cleaner'
+
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
