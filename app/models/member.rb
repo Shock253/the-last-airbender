@@ -1,5 +1,5 @@
 class Member
-  attr_reader :affiiation, :photo, :enemies, :allies
+  attr_reader :affiiation, :photo, :enemies, :allies, :name
   def initialize(params)
     @name = params[:name]
     @affiiation = params[:affiliation]
